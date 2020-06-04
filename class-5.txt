@@ -1,0 +1,398 @@
+1. Which CSS selector is more powerfull. Inline is more powerfull because it cascade all other style.
+2. Style set in head read style before read html code to apply that style
+3. Script (bevhaior) place on last, because bevabior set after loaded everything. Like first set image size and then apply slide
+4. In css style we have to optimize code, mean with minimum code we have to apply style. For example: border: 5px dashed red;
+5. Selector Class name should be start with letter like <h1 class="heading">. In css we have to write as .heading{color:red;}, mean starting with DOT. It used to apply same style on multiple tag/div/section
+6. Selector ID should be write as <h1 id="heading">. In css we have to write as #heading{class:red;}, mean staring with HASH. ID mustbe unique in HTML. 
+7. tag/element selector is not specific, because style on tag selector apply on all tag present in html.
+8. Multiple class can be used in same line with a space between the class. Like <h1 class="style1 style2">
+9. Color code:
+	Solid: directly write the color name and it will appear. Example red, green, yellow
+	Hexa (mostly used): Three main color red, green, blue whire as two digit hexa code. This code is widely available on internet, photoshop, etc. Example #000000, #FFFFFF
+	rgb: This is a function type code which format is rgb(00,00,00) for black. 
+	rgba: This same as like rgb, but with a extra properties that is aplha. Which control the transparency of that color. Example, rgba(00,00,00,.2), this code apply black color with 20% transparency. 
+
+10. Element Form is used in HTML to collect user input. 
+11. Beside the form we use another most important element that is "input". This "input" is actually present the input field with different type. For example, password, text, email, address, radio, submit, etc.
+12. Most used Form elements,
+	 input: give a single line short form for user/password
+		Exmaple <input type="text" placeholder="Enter Username">
+	 textarea: give a form of large field as like description
+		Exmaple: <textarea name="message" rows="10" cols="30">Default text</textarea>
+	 label: Define a name for the input field
+		Example: <label for="user">Username:</label><input type="text" id="user" placeholder="Enter Username">
+	 select: used to create dropdown list
+	 option: It is used in select elements for to active options of drop-down menu. For example.  
+				  <select id="area" name="Mirpur">
+				  <option value="mirpur-10">Mirpur-10</option>
+				  <option value="mirpur-11">Mirpur-11</option>
+				  <option value="mirpur-12">Mirpur-12</option>
+				  <option value="mirpur-14">Mirpur-14</option>
+				</select>
+	 optgroup: Used for group of options like drop down menu with group level. For example if we want segregate each area in sub-area as below
+				<select id="area" name="Mirpur">
+				  <optgroup label="Mirpur-10">
+					<option value="Monipur">Monipur</option>
+					<option value="Shenpara">Shenpara</option>
+					<option value="Benaroshipalli">Benaroshipalli</option>
+				  </optgroup>
+				  <optgroup label="Mirpur-11">
+					<option value="Lalmati">Lalmati</option>
+					<option value="Madina">Madina Nagar</option>
+					<option value="Palash">Palash</option>
+				  </optgroup>
+				  <optgroup label="Mirpur-12">
+					<option value="Pallabi">Pallabi</option>
+					<option value="Duip">Duip Nagar</option>
+					<option value="Mirpur">Mirpur DOHS</option>
+				  </optgroup>
+				  <optgroup label="Mirpur-14">
+					<option value="Kachukhet">Kachukhet</option>
+					<option value="Bhasantek">Bhasantek</option>
+					<option value="Tinshed">Tinshed Colony</option>
+				  </optgroup>
+				</select>
+
+13. Table used in HTML to create table into row and column as like excel/word. This is very useful tag to present a large dataset. Example,
+	  <table>							|	Declaration of table staring
+	  
+		<tr>							|
+			<th>SL</th>					|
+			<th>Name</th>				|   It declare table heading with some 
+			<th>Location</th>			|   predefine style. We also can change it
+		</tr>							|
+		
+		<tr>							|
+			<td>01</td>					|
+			<td>Md. Tarikul Islam</td>	|	Data row-1
+			<td>Mirpur</td>				|
+		</tr>							|
+		
+		<tr>							|
+			<td>01</td>					|
+			<td>Jeasan</td>				|	Data row-2
+			<td>Dhanmondi</td>			|
+		</tr>
+		
+	  </table>							|	Declaration of table closing
+14. list is other common tag in HTML to create unorderd and ordred list. Ordred list tag is <ol></ol> and unordered list is <ul></ul>. Both ordred and unordred has same list tag i,e <li></li>. Below is an example,
+		<ul>
+			<li>Item-1</li>
+			<li>Item-2</li>
+			<li>Item-3</li>
+		</ul>
+ 
+ 
+15.  HTML Elements
+		
+		<table>
+			<tr>
+				<th>SL</th>
+				<th>Tag</th>
+				<th>Descriptions</th>
+				<th>Example</th>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>&#60;!-- Comment --&#62;</td>
+				<td>Used to Define Comment</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>&#60;!DOCTYPE&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>003</td>
+				<td>&#60;a&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>004</td>
+				<td>&#60;abbr&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>005</td>
+				<td>&#60;address&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>006</td>
+				<td>&#60;area&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>007</td>
+				<td>&#60;article&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>008</td>
+				<td>&#60;aside&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>009</td>
+				<td>&#60;audio&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>010</td>
+				<td>&#60;b&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>011</td>
+				<td>&#60;base&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>012</td>
+				<td>&#60;bdi&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>013</td>
+				<td>&#60;bdo&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>014</td>
+				<td>&#60;blockquote&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>015</td>
+				<td>&#60;body&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>016</td>
+				<td>&#60;br&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>017</td>
+				<td>&#60;button&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>018</td>
+				<td>&#60;canvas&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>019</td>
+				<td>&#60;caption&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>020</td>
+				<td>&#60;cite&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>021</td>
+				<td>&#60;code&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>022</td>
+				<td>&#60;col&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>023</td>
+				<td>&#60;colgroup&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>024</td>
+				<td>&#60;data&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>025</td>
+				<td>&#60;datalist&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>026</td>
+				<td>&#60;dd&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>027</td>
+				<td>&#60;del&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>028</td>
+				<td>&#60;details&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>029</td>
+				<td>&#60;dfn&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>030</td>
+				<td>&#60;dialog&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>031</td>
+				<td>&#60;div&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>032</td>
+				<td>&#60;dl&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>033</td>
+				<td>&#60;dt&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>034</td>
+				<td>&#60;em&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>035</td>
+				<td>&#60;embed&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>036</td>
+				<td>&#60;fieldset&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>037</td>
+				<td>&#60;figcaption&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>038</td>
+				<td>&#60;figure&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>039</td>
+				<td>&#60;footer&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>040</td>
+				<td>&#60;form&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>041</td>
+				<td>&#60;h1&#62; to &#60;h6&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>042</td>
+				<td>&#60;head&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>043</td>
+				<td>&#60;header&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>044</td>
+				<td>&#60;hr&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>045</td>
+				<td>&#60;html&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>046</td>
+				<td>&#60;i&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>047</td>
+				<td>&#60;iframe&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>048</td>
+				<td>&#60;img&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>049</td>
+				<td>&#60;input&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>050</td>
+				<td>&#60;ins&#62;</td>
+				<td>sfdsfds</td>
+				<td></td>
+			</tr>
+		</table>
+
+
+

@@ -1,0 +1,41 @@
+
+
+.header{
+	
+	
+}
+
+.main_body{
+	
+	
+}
+
+.main_list{
+	
+	
+	
+}
+
+.footer{
+	
+	
+}
+
+span{
+	color: green;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.code-style{
+	color: green;
+}
+
+table, td, th{
+	margin: auto;
+	 border:1px solid black; 
+}
+
+.element-table{
+	width:100%;
+}

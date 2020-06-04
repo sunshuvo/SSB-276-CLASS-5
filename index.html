@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Class-5 by SSB-276</title>
+		<link rel="stylesheet" href="css/class-5.css">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<base href="" target="_blank">
+
+		<style>
+			
+		</style>
+
+
+	<head/>
+
+	<body>
+		<header class="header">
+			<h1 style="text-align:center;">I'm going to make some short note of Class-5 SSB-276</h1>
+		</header>
+
+		<main class="main_body">
+			<div>
+				<h2>Following content is cover on this class</h2>
+				
+				<ol class="main_list">
+					<li>Which CSS selector is more powerfull. Inline is more powerfull because it cascade all other style. Then internal if style set after css link.
+						<ol>
+							<li>Inline: write in html respective line.<br>For Example <span>&#60;div style="width: 100px"&#62;</span></li>
+							<li>Internal: set on respective HTML header section.<br>For Example: <span>&#60;style&#62; .some-style{width:100px;} &#60;/style&#62;</span></li>
+							<li>External: write css code in different file and link up to targeted HTML which should link on header section.<br>For Example: <span>&#60;link rel="stylesheet" href="style.css"&#62;</span></li>
+						</ol>
+					</li>
+					<li>HTML read the Style first which set in <span>head</span>, before read html code. For applying that style before presenting content. Otherwise first content will appear witout style and then apply it.</li>
+					<li>Script (bevhaior) place on last, because bevabior set after loaded everything. Like first set image size and then apply slide.</li>
+					<li>In css style we have to optimize code, means within minimum code we have to apply style. For example: <span>border: 5px dashed red;</span></li>
+					<li> There are three type Selectors which is mostly used in HTML styling as belows
+						<ol>
+							<li>Element: <span>div, body, section, aside, nav,</span> etc. This selector is not specific, because style on element/tag selector apply on all same element/tag's present in whole html document.</li>
+							<li>Class: user define class, multiple use in HTML code, more specific. Selector Class name should be start with letter like <span>&#60;h1 class="heading"&#62;</span>. In css we have to write as <span>.heading{color:red;}</span>, mean starting with DOT(.). It used to apply same style on multiple tag/element's</li>
+							<li>ID: userdefine unique id, single use in HTML code, more & more specific. Selector ID should be written as <span>&#60;h1 id="heading"&#62;</span> in HTML and in CSS as <span>#heading{class:red;}</span>. In CSS it always star with HASH(#).</li>
+						</ol>
+						Note: Multiple class can be used in same line with a space between the class. Like <span>&#60;h1 class="style1 style2"&#62;</span>. It used to apply multiple css style group on same object.
+					</li>
+					<li>Color code: There are several ways to define color of object as belows,
+						<ul>
+							<li>Solid: directly write the color name and it will appear. Example: <span>color: red; color: green; color: yellow;</span></li>
+							<li>Hexa (mostly used): Three main color red, green, blue whire as two digit hexa code. This code is widely available on internet, photoshop, etc. Example:  <span>color: #000000; Color: #FFFFFF;</span></li>
+							<li>rgb: This is a function type code, which format is <span>rgb(00,00,00)</span> for black. </li>
+							<li>rgba: This same as like rgb, but with a extra properties that is aplha. Which control the transparency of that color. Example, <span>rgba(00,00,00,.2)</span>, this code apply black color with 20% transparency. </li>
+						</ul>
+					
+					</li>
+					<li>Element <span>&#60;form&#62;</span> is used in HTML to collect user input. Beside the form we use another most important element that is <span>&#60;input&#62;</span>. This <span>&#60;input&#62;</span> is actually present the input field with different type. For example, <span>password, text, email, address, radio, submit, etc.</span></li>
+					<li>Below are some output of mostly used <span>form</span> elements,
+						<ul>
+							<li>
+								<form>
+									<fieldset>
+										<legend><span>&#60;input&#62;</span> give a single line short form for user/password, as below:</legend>
+										<ul>
+											<li>
+												<label for="user">Username:</label>
+												<input type="text" id="user" placeholder="Enter Username"> Code: <span>&#60;input type="text" id="user" placeholder="Enter Username"&#62;</span>
+											</li>
+											<li>
+												<label for="user">Password:</label>
+												<input type="password" id="user" placeholder="Enter Password"> Code: <span>&#60;input type="password" id="user" placeholder="Enter Password"&#62;</span>
+											</li>
+										</ul>
+									</fieldset>
+								</form>
+							</li>
+							<li>
+								<form>
+									<legend><span>&#60;textarea&#62;&#60;/textarea&#62;</span> give a form of large field as like description, as below:</legend>
+									<ul>
+										<li>
+											<label for="describe">Describe your skills:</label>
+											<textarea id="describe" name="message" rows="3" cols="20">Default text</textarea> Code: <span>&#60;textarea id="describe" name="message" rows="3" cols="20"&#062;Default text&#60;/textarea&#62;</span>
+										</li>
+									</ul>
+								</form>
+							</li>
+							<li>
+								<form>
+									<legend><span>&#60;label&#62;&#60;/label&#62;</span> Define a name for the input field, as below:</legend>
+									<ul>
+										<li>
+											<label for="user">Password:</label>
+											<input type="password" id="user" placeholder="Enter Password"> Label Code: <span>&#60;label for="user"&#62;Password:&#60;/label&#62;</span>
+										</li>
+									</ul>
+								</form>
+							</li>
+							<li><span>&#60;select&#62;&#60;/select&#62;</span> used to create dropdown list</li>
+							<li>
+								<legend><span>&#60;option&#62;&#60;/option&#62;</span> It is used in select elements for to active options of drop-down menu, as below:</legend>
+								<ul>
+									<li>
+										<select id="area" name="Mirpur">
+										  <option value="mirpur-10">Mirpur-10</option>
+										  <option value="mirpur-11">Mirpur-11</option>
+										  <option value="mirpur-12">Mirpur-12</option>
+										  <option value="mirpur-14">Mirpur-14</option>
+										</select>
+									</li>
+									<li>Code for this drop-down menu: 
+										<code><pre  class="code-style">
+&#60;select id="area" name="Mirpur"&#62;
+	&#60;option value="mirpur-10"&#62;Mirpur-10&#60;/option&#62;
+	&#60;option value="mirpur-11"&#62;Mirpur-11&#60;/option&#62;
+	&#60;option value="mirpur-12"&#62;Mirpur-12&#60;/option&#62;
+	&#60;option value="mirpur-14"&#62;Mirpur-14&#60;/option&#62;
+&#60;/select&#62;</pre></code>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<legend><span>&#60;optgroup&#62;&#60;/optgroup&#62;</span> Used for group of options like drop down menu with group level. For example if we want segregate each area in sub-area, as below:</legend>
+								<ul>
+									<li>
+										<select id="area" name="Mirpur">
+										  <optgroup label="Mirpur-10">
+											<option value="Monipur">Monipur</option>
+											<option value="Shenpara">Shenpara</option>
+											<option value="Benaroshipalli">Benaroshipalli</option>
+										  </optgroup>
+										  <optgroup label="Mirpur-11">
+											<option value="Lalmati">Lalmati</option>
+											<option value="Madina">Madina Nagar</option>
+											<option value="Palash">Palash</option>
+										  </optgroup>
+										  <optgroup label="Mirpur-12">
+											<option value="Pallabi">Pallabi</option>
+											<option value="Duip">Duip Nagar</option>
+											<option value="Mirpur">Mirpur DOHS</option>
+										  </optgroup>
+										  <optgroup label="Mirpur-14">
+											<option value="Kachukhet">Kachukhet</option>
+											<option value="Bhasantek">Bhasantek</option>
+											<option value="Tinshed">Tinshed Colony</option>
+										  </optgroup>
+										</select>
+									</li>
+									<li>Code for this drop-down menu: 
+										<code><pre  class="code-style">
+&#60;select id="area" name="Mirpur"&#62;
+	&#60;optgroup label="Mirpur-10"&#62;
+		&#60;option value="Monipur"&#62;Monipur&#60;/option&#62;
+		&#60;option value="Shenpara"&#62;Shenpara&#60;/option&#62;
+		&#60;option value="Benaroshipalli"&#62;Benaroshipalli&#60;/option&#62;
+	&#60;/optgroup&#62;
+	&#60;optgroup label="Mirpur-11">
+		&#60;option value="Lalmati"&#62;Lalmati&#60;/option&#62;
+		&#60;option value="Madina"&#62;Madina Nagar&#60;/option&#62;
+		&#60;option value="Palash"&#62;Palash&#60;/option&#62;
+	&#60;/optgroup&#62;
+	&#60;optgroup label="Mirpur-12"&#62;
+		&#60;option value="Pallabi"&#62;Pallabi&#60;/option&#62;
+		&#60;option value="Duip"&#62;Duip Nagar&#60;/option&#62;
+		&#60;option value="Mirpur"&#62;Mirpur DOHS&#60;/option&#62;
+	&#60;/optgroup&#62;
+	&#60;optgroup label="Mirpur-14"&#62;
+		&#60;option value="Kachukhet"&#62;Kachukhet&#60;/option&#62;
+		&#60;option value="Bhasantek"&#62;Bhasantek&#60;/option&#62;
+		&#60;option value="Tinshed"&#62;Tinshed Colony&#60;/option&#62;
+	&#60;/optgroup&#62;
+&#60;/select&#62;</pre></code>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><span>&#60;table&#62;&#60;/table&#62;</span> used in HTML to create table into row and column as like excel/word. This is very useful tag to present a large dataset. Example,
+						<table>
+							<tr>
+								<th>SL</th>
+								<th>Name</th>
+								<th>Location</th>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>Md. Tarikul Islam</td>
+								<td>Mirpur</td>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>Jeasan</td>
+								<td>Dhanmondi</td>
+							</tr>
+						</table>
+						
+						Code for this table (In item-11 you will find another example of large data-table):<code><pre  class="code-style">
+&#60;table&#62;						|   Declaration of table staring
+	  
+	&#60;tr&#62;					|
+		&#60;th&#62;SL&#60;/th&#62;			|
+		&#60;th&#62;Name;SL&#60;/th&#62;		|   It declare table heading with some 
+		&#60;th&#62;Location;SL&#60;/th&#62;		|   predefine style. We also can change it
+	&#60;/tr&#62;					|
+		
+	&#60;tr&#62;					|
+		&#60;td&#62;01&#60;/td&#62;			|
+		&#60;td&#62;Md. Tarikul Islam&#60;/td&#62;	|   Data row-1
+		&#60;td&#62;Mirpur&#60;/td&#62;			|
+	&#60;/tr&#62;					|
+		
+	&#60;tr&#62;					|
+		&#60;td&#62;01&#60;/td&#62;			|
+		&#60;td&#62;Jeasan&#60;/td&#62;			|   Data row-2
+		&#60;td&#62;Dhanmondi&#60;/td&#62;		|
+	&#60;/tr&#62;
+		
+  &#60;/table&#62;					|   Declaration of table closing</pre></code>
+					</li>
+					<li>List is other common tag in HTML to create unorderd and ordred list. Ordred list tag is <span>&#60;ol&#62;&#60;/ol&#62;</span> and unordered list is <span>&#60;ul&#62;&#60;/ul&#62;</span>. Both ordred and unordred has same list tag i,e <span>&#60;li&#62;&#60;/li&#62;</span>. Below is an example,
+						<ul>
+							<li>Item-1</li>
+							<li>Item-2</li>
+							<li>Item-3</li>
+						</ul>
+						Code for this example (This documents is mainly based on an ordered list):<code><pre class="code-style">
+	&#60;ul&#62;
+		&#60;li&#62;Item-1&#60;/li&#62;
+		&#60;li&#62;Item-2&#60;/li&#62;
+		&#60;li&#62;Item-3&#60;/li&#62;
+	&#60;/ul&#62;</pre></code>
+					</li>
+					<li>HTML Elements from W3Schools 
+						<table class="element-table">
+							<colgroup>
+								<col style="background-color:lightgray;">
+								<col style="background-color:lightgray;">
+								<col style="background-color:lightgray;">
+								<col style="background-color:lightgray;">
+							  </colgroup>
+							<caption>Table- Containing various HTML elements</caption>
+							<tr>
+								<th>SL</th>
+								<th>Tag</th>
+								<th>Descriptions</th>
+								<th>Example</th>
+							</tr>
+							<tr>
+								<td>001</td>
+								<td>&#60;!-- Comment --&#62;</td>
+								<td>Used to Define Comment in HTML code for reference or description about code.</td>
+								<td>Inspect here you will find some note here<!-- some note, which only show in code to describe about code --></td>
+							</tr>
+							<tr>
+								<td>002</td>
+								<td>&#60;!DOCTYPE&#62;</td>
+								<td>Its define the documents type like HTML5</td>
+								<td>This document is HTML5 you can inspect to check at line-1</td>
+							</tr>
+							<tr>
+								<td>003</td>
+								<td>&#60;a&#62;</td>
+								<td>Define a link to an object or text</td>
+								<td><a href="https://www.google.com/search?q=sunshuvo">Search me on Google</a></td>
+							</tr>
+							<tr>
+								<td>004</td>
+								<td>&#60;abbr&#62;</td>
+								<td>Show the abbreviation when mouse hover on the object</td>
+								<td>Hover Mouse on: <abbr title="Hypertext Markup Language">HTML</abbr> to check abbreviation of its</td>
+							</tr>
+							<tr>
+								<td>005</td>
+								<td>&#60;address&#62;</td>
+								<td>Its used to define address like email, physical, phone, etc. with some predefine style i.e. font italic</td>
+								<td>You can inspect my address on the footer section of this documents</td>
+							</tr>
+							<tr>
+								<td>006</td>
+								<td>&#60;area&#62;</td>
+								<td>Its used to define an area within a portion of image and play with that specific area</td>
+								<td><a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_areamap">Click to see</a></td>
+							</tr>
+							<tr>
+								<td>007</td>
+								<td>&#60;article&#62;</td>
+								<td>It used to define a independent content as like div/section</td>
+								<td>Inspect the footer section of this document to view the example</td>
+							</tr>
+							<tr>
+								<td>008</td>
+								<td>&#60;aside&#62;</td>
+								<td>It used to define another independent section which we can used is side and navigation bar or advertising</td>
+								<td><a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_aside2">Click to see</a></td>
+							</tr>
+							<tr>
+								<td>009</td>
+								<td>&#60;audio&#62;</td>
+								<td>Set to play a audio file directly on page</td>
+								<td>
+									<audio controls style="height:25px; width:70%;">
+									  <source src="audio/Amar_Shonar_Bangla_instrumental.ogg" type="audio/ogg">
+									</audio>
+								</td>
+							</tr>
+							<tr>
+								<td>010</td>
+								<td>&#60;b&#62;</td>
+								<td>Used to make some text bold</td>
+								<td>My name is <b>MD. Tarikul Islam</b></td>
+							</tr>
+							<tr>
+								<td>011</td>
+								<td>&#60;base&#62;</td>
+								<td>Used to assign base url on the top of the documents in head section</td>
+								<td>After assign base url only target url have to apply. You can inspect header section of this docuements where self documents url is set</td>
+							</tr>
+							<tr>
+								<td>012</td>
+								<td>&#60;bdi&#62;</td>
+								<td>It stand for Bi-Directional Isolation. Means isolate the part which can be formatted.</td>
+								<td><a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_bdi">Click to see</a></td>
+							</tr>
+							<tr>
+								<td>013</td>
+								<td>&#60;bdo&#62;</td>
+								<td>It stand for Bi-Directional Overwrite. Is is used to reverse the text. Direction (ltr/rtl) is madnatory which will control the direction ltr mean normal and rtl means reverse</td>
+								<td>This will reverse in below for bdo,<br><bdo dir="rtl">This will reverse</bdo></td>
+							</tr>
+							<tr>
+								<td>014</td>
+								<td>&#60;blockquote&#62;</td>
+								<td>Used to specifies a section which quoted from external site</td>
+								<td>This quote collected from Wikipedia,
+									<blockquote cite="https://en.wikipedia.org/wiki/Amar_Sonar_Bangla">
+										The word sonar literally means "made of gold", with "sona" meaning gold, and "ar" showing possession.
+									</blockquote>
+								</td>
+							</tr>
+							<tr>
+								<td>015</td>
+								<td>&#60;body&#62;</td>
+								<td>To define the main body section of the HTML document</td>
+								<td> Inspect this document to view example at line-17</td>
+							</tr>
+							<tr>
+								<td>016</td>
+								<td>&#60;br&#62;</td>
+								<td>It used to break the line</td>
+								<td>It will break now<br>This line after br tag</td>
+							</tr>
+							<tr>
+								<td>017</td>
+								<td>&#60;button&#62;</td>
+								<td>Used to create a clickable button</td>
+								<td><button type="button" onclick="alert('It just an example')">See Alert</button></td>
+							</tr>
+							<tr>
+								<td>018</td>
+								<td>&#60;canvas&#62;</td>
+								<td>Used to draw graphics</td>
+								<td><a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_canvas">Click to see</a></td>
+							</tr>
+							<tr>
+								<td>019</td>
+								<td>&#60;caption&#62;</td>
+								<td>Used to define table caption</td>
+								<td>Inspect this table to see example</td>
+							</tr>
+							<tr>
+								<td>020</td>
+								<td>&#60;cite&#62;</td>
+								<td>used to highligt a text-content. Normally in italic font</td>
+								<td>Inspect my name in footer section to see example</td>
+							</tr>
+							<tr>
+								<td>021</td>
+								<td>&#60;code&#62;</td>
+								<td>Used to display code in HTML as code format</td>
+								<td>Insect main list 8 and 9 to view example</td>
+							</tr>
+							<tr>
+								<td>022</td>
+								<td>&#60;col&#62;</td>
+								<td>used to specifies column properties within a column group</td>
+								<td>Inspect this table to see example</td>
+							</tr>
+							<tr>
+								<td>023</td>
+								<td>&#60;colgroup&#62;</td>
+								<td>Used to create group of column to format column</td>
+								<td>Inspect this table to see example</td>
+							</tr>
+							<tr>
+								<td>024</td>
+								<td>&#60;data&#62;</td>
+								<td>used to set machine readable data with human readable data. Mchine readable data will not present on page</td>
+								<td>
+									<ul>
+									  <li><data value="1216">Mirpur</data></li>
+									  <li><data value="1213">Banani</data></li>
+									  <li><data value="1222">Motijheel</data></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>025</td>
+								<td>&#60;datalist&#62;</td>
+								<td>This element is used in input field with a list of predefine value which support custom value also</td>
+								<td>
+									<label for="country">Select to write your country:</label>
+									<input list="country_lis" name="country" id="country">
+									  <datalist id="country_lis">
+										<option value="Bangadesh">
+										<option value="India">
+										<option value="Nepal">
+										<option value="Pakistan">
+										<option value="Bhutan">
+									  </datalist>
+								</td>
+							</tr>
+							<tr>
+								<td>026</td>
+								<td>&#60;dd&#62;</td>
+								<td>Define the description for each line on description list</td>
+								<td>Description list as below
+									<dl>
+									  <dt>Mirpur</dt>
+									  <dd>A Large area in Dhaka</dd>
+									  <dt>Gulshan</dt>
+									  <dd>High class socity</dd>
+									</dl>
+								</td>
+							</tr>
+							<tr>
+								<td>027</td>
+								<td>&#60;del&#62;</td>
+								<td>Used to mark some text which will be deleted or replaced</td>
+								<td>I will be <del>Web Developer</del> <ins>Full Stack Web Developer</ins></td>
+							</tr>
+							<tr>
+								<td>028</td>
+								<td>&#60;details&#62;</td>
+								<td>Used for additional details information which will normally hide and can view by expand button</td>
+								<td>
+									<details>
+									  <summary>About me</summary>
+									  I'm Md. Tarikul Islam. Work with SSL as a Telecom Engineer. Currently I'm enrolled at SSB for Fullstack Web developer course.
+									</details>
+								</td>
+							</tr>
+							<tr>
+								<td>029</td>
+								<td>&#60;dfn&#62;</td>
+								<td>Used for defination normally. For a long defination it highlight/italic the term of that defination</td>
+								<td><dfn>CSS</dfn> abbreviation is Cascading Style Sheet</td>
+							</tr>
+							<tr>
+								<td>030</td>
+								<td>&#60;dialog&#62;</td>
+								<td>This is used to open a windows and show some dialog</td>
+								<td><dialog style="padding:1px; position:relative;" open>This text shown by dailog box</dialog></td>
+							</tr>
+							<tr>
+								<td>031</td>
+								<td>&#60;div&#62;</td>
+								<td>Used to define a section/block which can be style alone from other</td>
+								<td>Inspect this document and check at line 23</td>
+							</tr>
+							<tr>
+								<td>032</td>
+								<td>&#60;dl&#62;</td>
+								<td>Defining description list</td>
+								<td>See dd on 27 no</td>
+							</tr>
+							<tr>
+								<td>033</td>
+								<td>&#60;dt&#62;</td>
+								<td>Define description list name</td>
+								<td>See dd on 27 no</td>
+							</tr>
+							<tr>
+								<td>034</td>
+								<td>&#60;em&#62;</td>
+								<td>Used to make italic some portion of text in line</td>
+								<td>In this line em is used to apply font style <em>Italic<em></td>
+							</tr>
+							<tr>
+								<td>035</td>
+								<td>&#60;embed&#62;</td>
+								<td>It's define a conainer for external resources like soem web page as iframe or video</td>
+								<td><embed type="text/html" src="https://sunshuvo.github.io/SSB-276-CLASS-4/"  width=100% height="200"></td>
+							</tr>
+							<tr>
+								<td>036</td>
+								<td>&#60;fieldset&#62;</td>
+								<td>Used to group in</td>
+								<td>See Form element at Main list-8</td>
+							</tr>
+							<tr>
+								<td>037</td>
+								<td>&#60;figcaption&#62;</td>
+								<td>sfdsfds</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>038</td>
+								<td>&#60;figure&#62;</td>
+								<td>sfdsfds</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>039</td>
+								<td>&#60;footer&#62;</td>
+								<td>Used to define footer section its work as like as div</td>
+								<td>See footer section in this documents</td>
+							</tr>
+							<tr>
+								<td>040</td>
+								<td>&#60;form&#62;</td>
+								<td>Used to create form to take user input</td>
+								<td>See Form element at Main list-8</td>
+							</tr>
+							<tr>
+								<td>041</td>
+								<td>&#60;h1&#62; to &#60;h6&#62;</td>
+								<td>Used at heading with some predefined style</td>
+								<td>See top heading of this documents</td>
+							</tr>
+							<tr>
+								<td>042</td>
+								<td>&#60;head&#62;</td>
+								<td>This is the metadata/information section of the documents</td>
+								<td>Inspect this documents at top</td>
+							</tr>
+							<tr>
+								<td>043</td>
+								<td>&#60;header&#62;</td>
+								<td>Used to define header section for the document</td>
+								<td>Inspect this document at line-8</td>
+							</tr>
+							<tr>
+								<td>044</td>
+								<td>&#60;hr&#62;</td>
+								<td>Used as thematic break in the document</td>
+								<td>Below is the break by hr <hr> Also you can find it at footer section of this document</td>
+							</tr>
+							<tr>
+								<td>045</td>
+								<td>&#60;html&#62;</td>
+								<td>It define the root of the document</td>
+								<td>Inspect this documentat line-1</td>
+							</tr>
+							<tr>
+								<td>046</td>
+								<td>&#60;i&#62;</td>
+								<td>used as an alternative on em, normally shown as italic</td>
+								<td><i>i element apply in this text</i></td>
+							</tr>
+							<tr>
+								<td>047</td>
+								<td>&#60;iframe&#62;</td>
+								<td>used to show other website</td>
+								<td><iframe src="https://sunshuvo.github.io/SSB-276-CLASS-4/" title="Class-3"></iframe></td>
+							</tr>
+							<tr>
+								<td>048</td>
+								<td>&#60;img&#62;</td>
+								<td>used to show an image on page</td>
+								<td><img src="img/sunshuvo.png" alt="sunshuvo"></td>
+							</tr>
+							<tr>
+								<td>049</td>
+								<td>&#60;input&#62;</td>
+								<td>Input filed at form to input user information</td>
+								<td><input type="password" placeholder="Enter your password"></td>
+							</tr>
+							<tr>
+								<td>050</td>
+								<td>&#60;ins&#62;</td>
+								<td>After use of del element this one used as replace or new one</td>
+								<td>I will be <del>Web Developer</del> <ins>Full Stack Web Developer</ins></td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<hr>
+			<article  style="text-align:center;">
+			<p>Here is the end of the class-5. I wrire this code as practicies as well as making the class note. If you have any queries about this code and notes please let me know. Also inform me if something you found wrong here.
+			<br>Thank you,
+			<br><cite>Md. Tarikul Islam (SUNSHUVO)</cite></p>
+			</article>
+			<address style="text-align:center;">
+			Home: 340/6, East Kajipara, Mirpur, Dhaka.
+			Phone: 01722589181
+			</address>
+		</footer>
+
+	<body/>
+</html>
